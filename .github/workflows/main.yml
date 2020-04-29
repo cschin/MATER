@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build_docker_image:
     name: build_docker
+    runs-on: ubuntu-latest
     steps:
     - uses: docker/build-push-action@v1
       with:
