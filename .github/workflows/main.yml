@@ -1,0 +1,14 @@
+name: test-docker-build
+
+on: [push]
+
+jobs:
+  build_docker_image:
+    name: build_docker
+      steps:
+        - uses: docker/build-push-action@v1
+          with:
+            username: ${{ secrets.dockerhub_user }}
+            password: ${{ secrets.dockerhub_password }}
+            repository: cschin/mater
+            tags: latest
