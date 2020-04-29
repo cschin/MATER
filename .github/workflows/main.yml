@@ -11,7 +11,7 @@ jobs:
       with:
         username: ${{ secrets.dockerhub_user }}
         password: ${{ secrets.dockerhub_password }}
-        dockerfile: docker/Dockerfile
+        dockerfile: Dockerfile
         path: docker/
         repository: cschin/mater
         tags: latest
