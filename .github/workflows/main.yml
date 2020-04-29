@@ -1,0 +1,6 @@
+uses: docker/build-push-action@v1
+with:
+  username: ${{ secrets.dockerhub_user }}
+  password: ${{ secrets.dockerhub_password }}
+  repository: cschin/mater
+  tags: latest
