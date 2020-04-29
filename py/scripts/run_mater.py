@@ -51,7 +51,8 @@ if __name__ == "__main__":
     os.system("echo {} > {}/reads.lst".format(reads_fn, output_dir))
     os.system(f"shmr_mkseqdb -d {output_dir}/reads.lst -p {output_dir}/reads >> /dev/null")
 
-    read_sdb = SequenceDatabase("reads.idx", "reads.seqdb")
+    read_sdb = SequenceDatabase(f"{output_dir}/reads.idx", 
+                                f"{output_dir}/reads.seqdb")
 
     kmer_size = 24
     w_size = 12
