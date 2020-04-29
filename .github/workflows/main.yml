@@ -5,12 +5,12 @@ on: [push]
 jobs:
   build_docker_image:
     name: build_docker
-      steps:
-        - uses: docker/build-push-action@v1
-          with:
-            username: ${{ secrets.dockerhub_user }}
-            password: ${{ secrets.dockerhub_password }}
-            dockerfile: docker/Dockerfile
-            path: docker/
-            repository: cschin/mater
-            tags: latest
+    steps:
+    - uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.dockerhub_user }}
+        password: ${{ secrets.dockerhub_password }}
+        dockerfile: docker/Dockerfile
+        path: docker/
+        repository: cschin/mater
+        tags: latest
