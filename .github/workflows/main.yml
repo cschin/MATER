@@ -16,4 +16,5 @@ jobs:
         path: docker/
         repository: cschin/mater
         tags: latest
-    run: cd test && bash run.sh 
+    - name: run the build docker containter
+      run: cd test && bash run.sh 
