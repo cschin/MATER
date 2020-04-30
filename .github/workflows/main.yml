@@ -16,3 +16,4 @@ jobs:
         path: docker/
         repository: cschin/mater
         tags: latest
+    run: cd test && bash run.sh 
