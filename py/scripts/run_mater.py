@@ -150,11 +150,9 @@ if __name__ == "__main__":
             print(allele, t, "%0.2f" % w, allele_count[allele][t], t2, file=out_f)
         print("#", file=out_f)
 
-    for allele in sorted(allele_weight.keys()):
-        if allele not in ("A", "B", "C"):
-            continue
+    for allele in ("A", "B", "C"):
         f = open("{}/reads_{}.fa".format(output_dir, allele),"w")
-        for i in allele2reads[allele]:
+        for i in allele2reads.get(allele,[]):
             print(">{}".format(read_sdb.index_data[i].rname), file=f)
             print(read_sdb.get_subseq_by_rid(i).decode(), file=f)
         f.close()
