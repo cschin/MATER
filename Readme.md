@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/cschin/MATER/workflows/test-docker-build/badge.svg)](https://github.com/cschin/MATER/actions)
+
 ## MATER - Minimizer RNAseq HLA TyER
 
 MATER is a minimier base HLA typer for RNAseq read dataset. In a typical RNAseq dataset,
