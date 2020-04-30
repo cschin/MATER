@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/cschin/MATER/workflows/test-docker-build/badge.svg)](https://github.com/cschin/MATER/actions)
+[![Actions Status](https://github.com/cschin/MATER/workflows/build-and-push-docker-image/badge.svg)](https://github.com/cschin/MATER/actions)
 
 ## MATER - Minimizer RNAseq HLA TyER
 
