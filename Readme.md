@@ -2,7 +2,7 @@
 
 ## MATER - Minimizer RNAseq HLA TyER
 
-MATER is a minimier base HLA typer for RNAseq read dataset. In a typical RNAseq dataset,
+MATER is a minimizer based HLA typer for RNAseq read dataset. In a typical RNAseq dataset,
 the reads sampled from HLA genes are less uniform and may miss regions that makes assembly
 or variant calling base methods for HLA typing more challenge. Here we adopt a slight
 different approach. We try to assign each reads to possible HLA types by using minimizers.
