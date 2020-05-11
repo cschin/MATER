@@ -1,20 +1,20 @@
 [![Actions Status](https://github.com/cschin/MATER/workflows/build-and-push-docker-image/badge.svg)](https://github.com/cschin/MATER/actions)
 
-## MATER - Minimizer RNAseq HLA TyER
+## MATER - Minimizer RNAseq HLA TypER
 
 MATER is a minimizer based HLA typer for RNAseq read dataset. In a typical RNAseq dataset,
 the reads sampled from HLA genes are less uniform and may miss regions that makes assembly
-or variant calling base methods for HLA typing more challenge. Here we adopt a slight
+or variant calling base methods for HLA typing more challenge. Here we adopt a slightly
 different approach. We try to assign each reads to possible HLA types by using minimizers.
-Namely, we will generate dense minimer for each reads and compare to those from the HLA
-type seqeunces. We annotate each each reads to possible HLA serotype or 4 digit type sequence
-according the minimizer matches. Some reads may be able to assign to single HLA type-sequence,
-some other may be more ambiguous. We derive a simple score to summarize the results from
+Namely, we will generate a dense minimer for each read and compare to those from the HLA
+type sequences. We annotate each each read with possible HLA serotypes or 4 digit type sequences
+according the minimizer matches. We may be able to assign some reads to a single HLA type-sequence,
+while some other may be more ambiguous. We derive a simple score to summarize the results from
 all reads that are mapped to HLA-type sequences for each HLA allele.
 
-While this method may not generate more rigious HLA-typing results, it is fast and can be
-use for upstream process for generate HLA-typing with assembly or variant call approach
-for RNAseq dataset.
+While this method may not generate the most rigorous HLA-typing results, it is fast and can be
+used as an upstream process for generating HLA-typing with assembly or variant call approaches
+for RNAseq datasets.
 
 
 ### Install
